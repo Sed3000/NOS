@@ -10,7 +10,7 @@ sleep 5
 systemctl stop NetworkManager && systemctl disable NetworkManager
 echo "Configuration: Install basic apps"
 sleep 5
-yum install -y net-tools nc wget tcpdump iperf3 nmap curl bind-utils nfs-utils
+yum install -y net-tools nc wget tcpdump iperf3 nmap curl bind-utils nfs-utils cloud-init
 echo "Configuration: Update Centos - Server will reboot"
 sleep 5
 yum -y update && touch ~/postinstall.completed && reboot
